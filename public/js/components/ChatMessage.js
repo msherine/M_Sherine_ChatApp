@@ -3,7 +3,7 @@ export default {
     props: ['message'],
 
     template: `
-    <article class=".chat-messages" :class="{ 'other-messages' : matchedID }">
+    <article class="chat-messages" :class="{ 'other-messages' : matchedID }">
         <h2> {{ message.name }} says:</h2>
         <p>{{ message.content }} </p>
     </article>
