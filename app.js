@@ -42,6 +42,6 @@ io.on('connection', (socket) => {
   socket.on('user_is_typing', function(user){
     console.log(user);
 
-    io.emit('typing', {nowtyping: user})
+    io.emit('typing', {nowtyping: user});
   })
 });

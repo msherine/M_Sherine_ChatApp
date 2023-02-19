@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Home Page</title>
+    <title>Chat App</title>
 </head>
 <body>
-    <h1>Chat App</h1>
+    <h1 id="main-headline">Chat App</h1>
 
     <main id="app">
         <section>
@@ -22,6 +22,7 @@
         </section>
 
         <section class="messages">
+            <h2>Recieve messages</h2>
             <ul id="messages">
                 <!-- render a new message component for every message -->
                 <newmsg v-for="message in messages" :message="message"></newmsg>
