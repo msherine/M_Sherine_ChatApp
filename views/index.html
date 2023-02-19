@@ -11,9 +11,23 @@
     <h1 id="main-headline">Chat App</h1>
 
     <main id="app">
+        <div class="page login-page active">
+            <div class="form">
+                <h2>Enter the Chat Space!</h2>
+                <div class="form-fields">
+                    <label>Your Name</label>
+                    <input id="nickname" v-model="nickname" type="text" placeholder="Nickname?">
+                </div>
+    
+                <div class="form-feilds">
+                    <button id="join-user">Enter</button>
+                </div>
+            </div>
+        </div>
+        
         <section>
             <h2>Input messages here:</h2>
-            <input id="nickname" v-model="nickname" type="text" placeholder="Nickname?">
+            <!-- <input id="nickname" v-model="nickname" type="text" placeholder="Nickname?"> -->
             <form>
                 <label for="message">Talk about something!</label>
                 <textarea @focus="detectTyping" v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
